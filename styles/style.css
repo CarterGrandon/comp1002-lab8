@@ -1,0 +1,100 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 325px;
+    gap: 20px;
+}
+
+.cell {
+    background-color: #ccc;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: #fff;
+    transition: 0.1s;
+}
+
+/* Cell 1 */
+.cell:nth-child(1) {
+    background-color: #ff4757;
+}
+
+.cell:nth-child(1):hover, .on {
+    transform: scale(1.05);
+}
+
+.cell:nth-child(1):active, .on {
+    background-color: #ff6b81;
+}
+
+/* Cell 2 */
+.cell:nth-child(2) {
+    background-color: #2ed573;
+}
+
+.cell:nth-child(2):hover, .on {
+    transform: scale(1.05);
+}
+
+.cell:nth-child(2):active, .on {
+    background-color: #7bed9f;
+}
+
+/* Cell 3 */
+.cell:nth-child(3) {
+    background-color: #3742fa;
+}
+
+.cell:nth-child(3):hover, .on {
+    transform: scale(1.05);
+}
+
+.cell:nth-child(3):active, .on {
+    background-color: #5352ed;
+}
+
+/* Cell 4 */
+.cell:nth-child(4) {
+    background-color: #ffa502;
+}
+
+.cell:nth-child(4):hover, .on {
+    transform: scale(1.05);
+}
+
+.cell:nth-child(4):active, .on {
+    background-color: #eccc68;
+}
+
+button {
+    background-color: #2f3542;
+    color: #ffffff;
+    padding: 1em;
+    transition: 0.1s;
+}
+
+button:hover {
+    background-color: #57606f;
+}
